@@ -1,5 +1,5 @@
-import { Heading } from "@chakra-ui/react";
+import { Homepage } from "@/src/modules/homepage";
 
 export default function Home() {
-  return <Heading>Home</Heading>;
+  return <Homepage />;
 }
