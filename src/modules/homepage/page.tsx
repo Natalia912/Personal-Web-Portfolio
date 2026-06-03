@@ -1,5 +1,7 @@
 import { About } from "./components/about";
+import { Experience } from "./components/experience";
 import { Header } from "./components/header";
+import { Projects } from "./components/projects";
 
 export function Homepage() {
   return (
@@ -7,6 +9,8 @@ export function Homepage() {
       <Header />
       <main className="lg:w-[50%]">
         <About />
+        <Experience />
+        <Projects />
       </main>
     </div>
   );

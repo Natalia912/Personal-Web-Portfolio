@@ -1,7 +1,7 @@
-import { about, socialIcons, socials, type Social } from "@/src/shared/lib";
+import { about, socialIcons, socials, type SocialType } from "@/src/shared/lib";
 import { Navigation } from "./navigation";
 
-const SocialLink = ({ name, url, icon }: Social) => {
+const SocialLink = ({ name, url, icon }: SocialType) => {
   const Icon = socialIcons[icon];
   return (
     <a
@@ -24,7 +24,7 @@ function Header() {
           {about.name}
         </h1>
         <p className="text-2xl mt-2 mb-4 md:text-4xl">{about.title}</p>
-        <p className="text-lg max-w-88 md:text-2xl md:max-w-100">
+        <p className="text-md md:text-lg lg:text-xl max-w-88 md:max-w-100">
           {about.shortDescription}
         </p>
       </div>
