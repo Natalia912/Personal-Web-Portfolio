@@ -1,12 +1,13 @@
 import { socialIcons } from "./icons";
 
-export type Social = {
+export type SocialType = {
   name: string;
   url: string;
   icon: keyof typeof socialIcons;
 };
 
-export type Project = {
+export type ProjectType = {
+  id: number;
   name: string;
   description: string;
   technologies: string[];
@@ -15,19 +16,20 @@ export type Project = {
   images: string[];
 };
 
-export type Skill = {
+export type SkillType = {
   name: string;
   icon: string;
 };
 
-export type About = {
+export type AboutType = {
   name: string;
   title: string;
   shortDescription: string;
   longDescription: string[];
 };
 
-export type Experience = {
+export type ExperienceType = {
+  id: number;
   company: string;
   position: string;
   startDate: string;
