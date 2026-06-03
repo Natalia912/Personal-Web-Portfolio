@@ -1,6 +1,12 @@
-import { About, Experience, Project, Skill, Social } from "./types";
+import {
+  AboutType,
+  ExperienceType,
+  ProjectType,
+  SkillType,
+  SocialType,
+} from "./types";
 
-export const about: About = {
+export const about: AboutType = {
   name: "Natalia Tretiakova",
   title: "Frontend Developer",
   shortDescription:
@@ -12,41 +18,59 @@ export const about: About = {
   ],
 };
 
-export const socials: Social[] = [
-  { name: "GitHub", url: "", icon: "github" },
-  { name: "LinkedIn", url: "", icon: "linkedin" },
-  { name: "Upwork", url: "", icon: "upwork" },
-  { name: "Telegram", url: "", icon: "telegram" },
-];
-
-export const skills: Skill[] = [
-  { name: "React", icon: "react" },
-  { name: "Next.js", icon: "nextjs" },
-  { name: "Vue", icon: "vue" },
-  { name: "TypeScript", icon: "typescript" },
-  { name: "JavaScript", icon: "javascript" },
-  { name: "HTML5", icon: "html5" },
-  { name: "CSS3", icon: "css3" },
-];
-
-export const experience: Experience[] = [
+export const socials: SocialType[] = [
+  { name: "GitHub", url: "https://github.com/Natalia912", icon: "github" },
   {
-    company: "AlexFrontEnd",
-    position: "Frontend Developer",
-    startDate: "2022-01-01",
-    endDate: null,
-    url: "",
-    description: [],
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/tretiakovan/",
+    icon: "linkedin",
+  },
+  {
+    name: "Upwork",
+    url: "https://www.upwork.com/freelancers/~019fb92627a2b0d689",
+    icon: "upwork",
   },
 ];
 
-export const projects: Project[] = [
+export const experience: ExperienceType[] = [
   {
-    name: "Project Name",
-    description: "Brief description of the project.",
-    technologies: ["React", "TypeScript", "Next.js"],
-    url: "",
-    featuredImage: "",
-    images: [],
+    id: 1,
+    company: "AlexFrontEnd",
+    position: "Frontend Developer",
+    startDate: "2022-09",
+    endDate: null,
+    url: "https://www.alexfrontend.com/",
+    description: [
+      "Developed and maintained web applications using React, Next.js, Vue, and TypeScript. Built 20+ projects for clients in different industries, such as architecture & construction, oil & gas, finance, AI, and more.",
+    ],
+  },
+];
+
+export const projects: ProjectType[] = [
+  {
+    id: 1,
+    name: "Script & Package Management Web App",
+    description:
+      "A cloud-based platform built with Vue.js and the Quasar framework that enables AEC (architecture, engineering, and construction) teams to deploy, document, and govern their Dynamo and Grasshopper automation scripts across their organization.",
+    technologies: ["JavaScript", "Vue.js", "Quasar", "Pinia"],
+    url: "https://app.orkestra.online/#/login",
+    featuredImage: "/1-3.png",
+    images: ["/1-1.png", "/1-2.png", "/1-3.png", "/1-4.png"],
+  },
+  {
+    id: 2,
+    name: "Next.js marketing website for a B2B SaaS platform with Headless CMS",
+    description:
+      "A marketing website for a B2B SaaS platform for geoscience, petrophysics, and production analytics used by geologists at major oil & gas companies including Devon, OXY, Coterra, and Hilcorp.",
+    technologies: [
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "Sanity CMS",
+      "Tailwind CSS",
+    ],
+    url: "https://www.danomics.com/",
+    featuredImage: "/2-1.png",
+    images: ["/2-1.png", "/2-2.png", "/2-3.png"],
   },
 ];
