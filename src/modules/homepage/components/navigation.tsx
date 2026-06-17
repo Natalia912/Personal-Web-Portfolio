@@ -1,6 +1,5 @@
 "use client";
 
-import { useDevice } from "@/src/shared/hooks";
 import { sections } from "@/src/shared/lib";
 import { Airplane } from "@/src/shared/ui/icons";
 import { useNavigationObserver } from "../hooks/useNavigationObserver";
@@ -49,12 +48,11 @@ const DesktopNavigation = ({ activeSection }: { activeSection: string }) => (
 );
 
 export const Navigation = () => {
-  const { isDesktop } = useDevice();
   const activeSection = useNavigationObserver();
 
-  if (!isDesktop) {
-    return null;
-  }
-
-  return <DesktopNavigation activeSection={activeSection} />;
+  return (
+    <div className="hidden md:block">
+      <DesktopNavigation activeSection={activeSection} />
+    </div>
+  );
 };
