@@ -23,7 +23,7 @@ export const Projects = () => {
               className="rounded-sm object-cover"
             />
             <div>
-              <h3 className="text-2xl tracking-tight font-bold mb-2">
+              <h3 className="md:text-2xl text-lg tracking-tight font-bold mb-2">
                 {project.name}
               </h3>
               <p className="text-md md:text-lg lg:text-xl mb-4">
