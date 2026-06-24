@@ -17,7 +17,9 @@ const ExperienceItem = ({ exp }: { exp: ExperienceType }) => (
     </p>
     <div>
       <div>
-        <h3 className="text-2xl tracking-tight font-bold">{exp.company}</h3>
+        <h3 className="md:text-2xl text-lg tracking-tight font-bold">
+          {exp.company}
+        </h3>
         <p className="text-md md:text-lg lg:text-xl text-brand-300">
           {exp.position}
         </p>
