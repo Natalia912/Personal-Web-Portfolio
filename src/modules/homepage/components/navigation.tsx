@@ -51,7 +51,7 @@ export const Navigation = () => {
   const activeSection = useNavigationObserver();
 
   return (
-    <div className="hidden md:block">
+    <div className="hidden lg:block">
       <DesktopNavigation activeSection={activeSection} />
     </div>
   );
