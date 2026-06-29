@@ -1,17 +1,18 @@
 import { projects, sections } from "@/src/shared/lib";
 import { Section } from "./section";
 import Image from "next/image";
+import { Heading, Paragraph } from "@/src/shared/ui/typography";
+import Link from "next/link";
+import { TagList } from "@/src/shared/ui/components";
 
 export const Projects = () => {
   return (
     <Section id={sections[2].id} name={sections[2].name}>
       <div className="flex flex-col gap-12">
         {projects.map((project) => (
-          <a
+          <Link
             key={project.name}
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`projects/${project.slug}`}
             className="flex flex-col-reverse md:flex-row items-start gap-6 relative group"
           >
             <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg border border-transparent transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:border-brand-500 lg:group-hover:shadow"></div>
@@ -23,24 +24,17 @@ export const Projects = () => {
               className="rounded-sm object-cover"
             />
             <div>
-              <h3 className="md:text-2xl text-lg tracking-tight font-bold mb-2">
+              <Heading level={3} bold className="mb-2">
                 {project.name}
-              </h3>
-              <p className="text-md md:text-lg lg:text-xl mb-4">
-                {project.description}
-              </p>
-              <ul className="flex gap-2 flex-wrap">
+              </Heading>
+              <Paragraph className="mb-4">{project.description}</Paragraph>
+              <TagList>
                 {project.technologies.map((tech) => (
-                  <li
-                    key={tech}
-                    className="text-md bg-brand-200 font-bold text-brand-900 px-4 py-1 rounded-full"
-                  >
-                    {tech}
-                  </li>
+                  <TagList.Item key={tech}>{tech}</TagList.Item>
                 ))}
-              </ul>
+              </TagList>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </Section>

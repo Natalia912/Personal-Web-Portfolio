@@ -11,6 +11,7 @@ export type ProjectType = {
   name: string;
   description: string;
   technologies: string[];
+  slug: string;
   url: string;
   featuredImage: string;
   images: string[];
