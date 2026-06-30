@@ -23,7 +23,7 @@ export const Project = async ({
   return (
     <div className="relative">
       <Header />
-      <main className="flex flex-col lg:flex-row lg:justify-between gap-4 lg:gap-8 pt-6">
+      <main className="flex flex-col lg:flex-row lg:justify-between gap-4 lg:gap-16 pt-6">
         <ProjectInfo
           title={project.name}
           images={project.images}
