@@ -12,7 +12,7 @@ export const about: AboutType = {
     "Developing user-friendly and pixel-perfect web applications since 2022.",
   longDescription: [
     `I am a frontend developer with ${new Date().getFullYear() - 2022} years of experience in creating user-friendly and pixel-perfect web applications. I specialize in React, Next.js, Vue, and TypeScript, and I am passionate about building high-quality software that meets the needs of users.`,
-    `As of this moment, I am working full-time at AlexFrontEnd, where I have been involved in various projects, starting from simple landing pages to large-scale web applications. I have built 20+ projects for clients in different industries, such as architecture & construction, oil & gas, finance, AI, and more.`,
+    `As of this moment, I am working full-time at AlexFrontEnd, where I have been involved in various projects, starting from simple landing pages to large-scale web applications. I have built 10+ projects for clients in different industries, such as architecture & construction, oil & gas, finance, AI, and more.`,
     `In my free time, I am pursuing an online Bachelor's degree in Software Development at International University of Applied Sciences. I also enjoy knitting, crochet, photography, and running.`,
   ],
 };
@@ -40,7 +40,7 @@ export const experience: ExperienceType[] = [
     endDate: null,
     url: "https://www.alexfrontend.com/",
     description: [
-      "Developed and maintained web applications using React, Next.js, Vue, and TypeScript. Built 20+ projects for clients in different industries, such as architecture & construction, oil & gas, finance, AI, and more.",
+      "Developed and maintained web applications using React, Next.js, Vue, and TypeScript. Built 10+ projects for clients in different industries, such as architecture & construction, oil & gas, finance, AI, and more.",
     ],
   },
 ];
