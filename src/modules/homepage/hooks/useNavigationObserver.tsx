@@ -1,5 +1,5 @@
 import { useObserver } from "@/src/shared/hooks";
-import { sections } from "@/src/shared/lib";
+import { sections } from "@/src/shared/data";
 import { useRef, useState } from "react";
 
 export const useNavigationObserver = () => {

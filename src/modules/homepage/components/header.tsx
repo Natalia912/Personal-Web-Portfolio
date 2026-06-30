@@ -1,5 +1,7 @@
-import { about, socialIcons, socials, type SocialType } from "@/src/shared/lib";
+import { type SocialType } from "@/src/shared/lib";
+import { about, socials, socialIcons } from "@/src/shared/data";
 import { Navigation } from "./navigation";
+import { Heading, Paragraph } from "@/src/shared/ui/typography";
 
 const SocialLink = ({ name, url, icon }: SocialType) => {
   const Icon = socialIcons[icon];
@@ -18,15 +20,15 @@ const SocialLink = ({ name, url, icon }: SocialType) => {
 
 function Header() {
   return (
-    <header className="flex flex-col gap-4 justify-between lg:sticky lg:top-0 lg:py-24 lg:my-0 lg:h-screen  lg:w-[50%]">
+    <header className="flex flex-1 flex-col gap-4 justify-between lg:sticky lg:top-0 lg:py-24 lg:my-0 lg:h-screen">
       <div>
-        <h1 className="text-4xl tracking-tight font-bold text-brand-50 md:text-6xl">
-          {about.name}
-        </h1>
-        <p className="text-2xl mt-2 mb-4 md:text-4xl">{about.title}</p>
-        <p className="text-md md:text-lg lg:text-xl max-w-88 md:max-w-100">
+        <Heading bold>{about.name}</Heading>
+        <Heading level={2} className="mt-2 mb-4">
+          {about.title}
+        </Heading>
+        <Paragraph className="max-w-88 md:max-w-100">
           {about.shortDescription}
-        </p>
+        </Paragraph>
       </div>
       <Navigation />
       <div>

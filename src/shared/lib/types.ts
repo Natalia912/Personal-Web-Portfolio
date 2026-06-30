@@ -1,4 +1,4 @@
-import { socialIcons } from "./icons";
+import { socialIcons } from "../data/icons";
 
 export type SocialType = {
   name: string;
@@ -11,7 +11,7 @@ export type ProjectType = {
   name: string;
   description: string;
   technologies: string[];
-  url: string;
+  slug: string;
   featuredImage: string;
   images: string[];
 };
