@@ -1,4 +1,5 @@
-import { type ExperienceType, experience, sections } from "@/src/shared/lib";
+import { type ExperienceType } from "@/src/shared/lib";
+import { experience, sections } from "@/src/shared/data";
 import { Section } from "./section";
 import { readableDate } from "@/src/shared/utils";
 import { Heading, Paragraph } from "@/src/shared/ui/typography";

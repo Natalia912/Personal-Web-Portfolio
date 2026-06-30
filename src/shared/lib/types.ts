@@ -1,4 +1,4 @@
-import { socialIcons } from "./icons";
+import { socialIcons } from "../data/icons";
 
 export type SocialType = {
   name: string;

@@ -1,4 +1,4 @@
-import { projects, sections } from "@/src/shared/lib";
+import { projects, sections } from "@/src/shared/data";
 import { Section } from "./section";
 import Image from "next/image";
 import { Heading, Paragraph } from "@/src/shared/ui/typography";

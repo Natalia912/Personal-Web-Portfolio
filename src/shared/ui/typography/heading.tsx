@@ -14,10 +14,10 @@ export const Heading = ({
   const Tag = `h${level}` as const;
 
   const styles = {
-    1: "text-4xl tracking-tight text-brand-50 md:text-6xl",
-    2: "text-2xl md:text-4xl",
+    1: "text-4xl tracking-tight text-brand-100 md:text-6xl tracking-tight",
+    2: "text-2xl md:text-4xl tracking-tight",
     3: "md:text-2xl text-lg tracking-tight",
-    4: "text-md md:text-lg",
+    4: "text-md md:text-lg tracking-tight",
     5: "text-md md:text-lg",
     6: "text-md md:text-lg",
   } as const;

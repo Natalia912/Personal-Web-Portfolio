@@ -51,6 +51,7 @@ export const Carousel = ({ images }: Props) => {
               <Image
                 src={slide}
                 alt={`Slide ${index}`}
+                priority={index === 0}
                 fill
                 className="object-cover"
               />
@@ -71,6 +72,7 @@ export const Carousel = ({ images }: Props) => {
         {images.map((_, index) => (
           <button
             key={index}
+            aria-label={`Go to slide ${index + 1}`}
             className={cn(
               "w-2 h-2 bg-brand-300/75 rounded-full cursor-pointer transition-colors",
               currentIndex === index ? "bg-brand-900" : "",

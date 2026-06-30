@@ -2,9 +2,8 @@ import {
   AboutType,
   ExperienceType,
   ProjectType,
-  SkillType,
   SocialType,
-} from "./types";
+} from "../lib/types";
 
 export const about: AboutType = {
   name: "Natalia Tretiakova",

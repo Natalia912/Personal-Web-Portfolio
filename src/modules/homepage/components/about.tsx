@@ -1,4 +1,4 @@
-import { about, sections } from "@/src/shared/lib";
+import { about, sections } from "@/src/shared/data";
 import { Section } from "./section";
 import { Paragraph } from "@/src/shared/ui/typography";
 

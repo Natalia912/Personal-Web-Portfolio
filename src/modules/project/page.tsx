@@ -1,7 +1,9 @@
-import { projects } from "@/src/shared/lib";
+import { getProjectBySlug, getProjectHtml } from "@/src/shared/server";
 import { notFound } from "next/navigation";
 import { Header } from "./components/header";
 import { ProjectInfo } from "./components/project-info";
+import { cn } from "@/src/shared/utils";
+import { styles } from "./lib/content-styles";
 
 export const Project = async ({
   params,
@@ -10,23 +12,28 @@ export const Project = async ({
 }) => {
   const { slug } = await params;
 
-  const project = projects.find((p) => p.slug === slug);
+  const project = getProjectBySlug(slug);
 
   if (!project) {
     notFound();
   }
 
+  const content = await getProjectHtml(project.rawContent);
+
   return (
-    <>
+    <div className="relative">
       <Header />
-      <main className="lg:flex lg:justify-between gap-4 lg:gap-8 pt-8">
+      <main className="flex flex-col lg:flex-row lg:justify-between gap-4 lg:gap-8 pt-6">
         <ProjectInfo
           title={project.name}
           images={project.images}
           technologies={project.technologies}
         />
-        <article className="lg:w-[50%]"></article>
+        <article
+          className={cn("flex-1", styles)}
+          dangerouslySetInnerHTML={{ __html: content }}
+        ></article>
       </main>
-    </>
+    </div>
   );
 };

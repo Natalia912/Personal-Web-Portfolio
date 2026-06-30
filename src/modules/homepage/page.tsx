@@ -5,9 +5,9 @@ import { Projects } from "./components/projects";
 
 export function Homepage() {
   return (
-    <div className="lg:flex lg:justify-between gap-4 lg:gap-8">
+    <div className="flex flex-col lg:flex-row lg:justify-between gap-0 lg:gap-4">
       <Header />
-      <main className="lg:w-[50%]">
+      <main className="flex-1">
         <About />
         <Experience />
         <Projects />

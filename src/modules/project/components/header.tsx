@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export const Header = () => {
   const router = useRouter();
   return (
-    <header className="lg:pt-4">
+    <header className="lg:pt-4 lg:sticky lg:top-0">
       <button
         onClick={() => router.back()}
         className="flex gap-2 cursor-pointer hover:text-brand-300 group focus-visible:text-brand-300 transition-colors w-fit"

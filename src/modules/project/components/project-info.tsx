@@ -9,7 +9,7 @@ type Props = {
 
 export const ProjectInfo = ({ title, images, technologies }: Props) => {
   return (
-    <aside className="flex flex-col gap-8 justify-between h-full">
+    <aside className="flex flex-col gap-8 flex-1 justify-between h-full lg:sticky lg:top-17">
       <div>
         <Heading>{title}</Heading>
         <TagList className="mt-4">
