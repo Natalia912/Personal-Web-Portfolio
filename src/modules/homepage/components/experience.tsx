@@ -1,7 +1,9 @@
-import { type ExperienceType, experience, sections } from "@/src/shared/lib";
+import { type ExperienceType } from "@/src/shared/lib";
+import { experience, sections } from "@/src/shared/data";
 import { Section } from "./section";
 import { readableDate } from "@/src/shared/utils";
-import { ArrowRight } from "@/src/shared/ui/icons";
+import { Heading, Paragraph } from "@/src/shared/ui/typography";
+import { ArrowLink } from "@/src/shared/ui/components";
 
 const ExperienceItem = ({ exp }: { exp: ExperienceType }) => (
   <a
@@ -17,17 +19,15 @@ const ExperienceItem = ({ exp }: { exp: ExperienceType }) => (
     </p>
     <div>
       <div>
-        <h3 className="md:text-2xl text-lg tracking-tight font-bold">
+        <Heading level={3} bold>
           {exp.company}
-        </h3>
-        <p className="text-md md:text-lg lg:text-xl text-brand-300">
-          {exp.position}
-        </p>
+        </Heading>
+        <Paragraph className=" text-brand-300">{exp.position}</Paragraph>
       </div>
       {exp.description.map((desc, index) => (
-        <p key={index} className="text-md md:text-lg lg:text-xl mt-2">
+        <Paragraph key={index} className="mt-2">
           {desc}
-        </p>
+        </Paragraph>
       ))}
     </div>
   </a>
@@ -40,16 +40,12 @@ export const Experience = () => {
         {experience.map((exp) => (
           <ExperienceItem exp={exp} key={exp.id} />
         ))}
-        <a
+        <ArrowLink
           href="/CV_Natalia_Tretiakova.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-brand-200 font-semibold group flex items-center gap-2 text-lg"
-        >
-          <ArrowRight className="w-5 h-5 rotate-180 transition-transform group-hover:-translate-x-2" />
-          <span>See full resume</span>
-          <ArrowRight className="w-5 h-5 -ml-0.5 transition-transform group-hover:translate-x-2" />
-        </a>
+          text="See full resume"
+        />
       </div>
     </Section>
   );

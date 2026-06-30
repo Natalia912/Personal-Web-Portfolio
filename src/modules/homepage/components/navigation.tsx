@@ -1,6 +1,6 @@
 "use client";
 
-import { sections } from "@/src/shared/lib";
+import { sections } from "@/src/shared/data";
 import { Airplane } from "@/src/shared/ui/icons";
 import { useNavigationObserver } from "../hooks/useNavigationObserver";
 
