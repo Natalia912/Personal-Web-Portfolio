@@ -40,7 +40,7 @@ export const experience: ExperienceType[] = [
     endDate: null,
     url: "https://www.alexfrontend.com/",
     description: [
-      "Developed and maintained web applications using React, Next.js, Vue, and TypeScript. Built 20+ projects for clients in different industries, such as architecture & construction, oil & gas, finance, AI, and more.",
+      "Developed and maintained web applications using React, Next.js, Vue, and TypeScript. Built 10+ projects for clients in different industries, such as architecture & construction, oil & gas, finance, AI, and more.",
     ],
   },
 ];
