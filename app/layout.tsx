@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Natalia Tretiakova - Frontend Developer",
   description:
-    "Portfolio of Natalia Tretiakova, a frontend developer specializing in React, Vue,Next.js and TypeScript. Explore my projects, experience, and contact information.",
+    "Portfolio of Natalia Tretiakova, a frontend developer specializing in React, Vue, Next.js and TypeScript. Explore my projects, experience, and contact information.",
 };
 
 const nunito = Nunito({ subsets: ["latin"] });
