@@ -12,7 +12,6 @@ export type ProjectType = {
   description: string;
   technologies: string[];
   slug: string;
-  url: string;
   featuredImage: string;
   images: string[];
 };

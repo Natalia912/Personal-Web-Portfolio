@@ -53,6 +53,7 @@ export const Carousel = ({ images }: Props) => {
                 alt={`Slide ${index}`}
                 priority={index === 0}
                 fill
+                sizes="(max-width: 1200px) 100vw, 75vw"
                 className="object-cover"
               />
             </div>

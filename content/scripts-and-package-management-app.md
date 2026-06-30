@@ -31,4 +31,4 @@ Sole developer on the project. I was responsible for architecture, frontend impl
 ## Client feedback
 
 > Natalia and her team are absolutely great to work with.
-> They feel like part of your team, do great work, with great comunication and positive energy. I wholeheartedly recommend working with them, and intend to keep doing so myself :)`
+> They feel like part of your team, do great work, with great comunication and positive energy. I wholeheartedly recommend working with them, and intend to keep doing so myself :)
