@@ -47,7 +47,10 @@ export const Carousel = ({ images }: Props) => {
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {images.map((slide, index) => (
-            <div className="min-w-full relative h-full" key={index}>
+            <div
+              className="min-w-full relative h-full bg-brand-100"
+              key={index}
+            >
               <Image
                 src={slide}
                 alt={`Slide ${index}`}
