@@ -1,6 +1,6 @@
 # Natalia Tretiakova — Frontend Developer Portfolio
 
-Live site: natalia-tretiakova.vercel.app
+Live site: [natalia-tretiakova.vercel.app](https://natalia-tretiakova.vercel.app/)
 
 Source code for my personal portfolio, showcasing frontend and full-stack projects built for clients and personal exploration.
 
