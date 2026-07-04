@@ -1,12 +1,19 @@
-# Portfolio
+# Natalia Tretiakova — Frontend Developer Portfolio
 
-My portfolio website built with [Next.js](https://nextjs.org) and React.
+Live site: natalia-tretiakova.vercel.app
+
+Source code for my personal portfolio, showcasing frontend and full-stack projects built for clients and personal exploration.
+
+## About this project
+
+This portfolio is built to load fast, work well on any device, and make it easy to review my work. Each project contains tech stack, description, key features and technical highlights, as well as my contribution.
 
 ## Tech Stack
 
-- [Next.js 15+](https://nextjs.org) - React framework
-- [TypeScript](https://www.typescriptlang.org) - Type safety
-- [Tailwind CSS](https://tailwindcss.com) - Styling
+- Next.js/React.js
+- TypeScript
+- Tailwind CSS
+- Vercel
 
 ## Getting Started
 
