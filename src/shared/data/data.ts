@@ -11,8 +11,8 @@ export const about: AboutType = {
   shortDescription:
     "Developing user-friendly and pixel-perfect web applications since 2022.",
   longDescription: [
-    `I am a frontend developer with ${new Date().getFullYear() - 2022} years of experience in creating user-friendly and pixel-perfect web applications. I specialize in React, Next.js, Vue, and TypeScript, and I am passionate about building high-quality software that meets the needs of users.`,
-    `As of this moment, I am working full-time at AlexFrontEnd, where I have been involved in various projects, starting from simple landing pages to large-scale web applications. I have built 10+ projects for clients in different industries, such as architecture & construction, oil & gas, finance, AI, and more.`,
+    `I am a frontend developer with 4 years of experience creating user-friendly and pixel-perfect web applications, and hands-on experience building simple fullstack systems. I specialize in React, Next.js, Vue, and TypeScript on the frontend, with backend experience in Next.js API routes and Python/FastAPI/PostgreSQL.`,
+    `Previously, I worked full-time at AlexFrontEnd, where I was involved in various projects, ranging from simple landing pages to large-scale web applications. I built 10+ projects for clients across different industries, including architecture & construction, oil & gas, finance, and AI.`,
     `In my free time, I am pursuing an online Bachelor's degree in Software Development at International University of Applied Sciences. I also enjoy knitting, crochet, photography, and running.`,
   ],
 };
@@ -114,6 +114,8 @@ export const projects: ProjectType[] = [
       "TanStack Query",
       "Vue Router",
       "Vite",
+      "FastAPI",
+      "PostgreSQL",
     ],
     slug: "rocky-jam",
     featuredImage: "/4-1.png",
