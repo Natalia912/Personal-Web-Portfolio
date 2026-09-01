@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "title": "Наталья Третьякова - Frontend Developer",
+    "description": "Портфолио Натальи Третьяковой, frontend-разработчицы, специализирующейся на React, Vue, Next.js и TypeScript. Ознакомьтесь с моими проектами, опытом работы и контактной информацией."
+  },
+  "links": {
+    "cv": "/CV_Наталья_Третьякова.pdf"
+  },
+  "buttons": {
+    "selectLanguage": "Выбрать язык",
+    "seeResume": "Посмотреть полное резюме",
+    "goBack": "Вернуться на главную страницу"
+  },
+  "homepage": {
+    "navigation": {
+      "about": "Обо мне",
+      "experience": "Опыт работы",
+      "projects": "Проекты"
+    },
+    "about": {
+      "name": "Наталья Третьякова",
+      "title": "Frontend Developer",
+      "shortDescription": "Разрабатываю удобные и качественные веб-приложения с 2022",
+      "longDescription": [
+        "Я frontend-разработчик с {yoe}-летним опытом создания удобных и pixel-perfect веб-приложений, а также опытом разработки простых fullstack-систем. Специализируюсь на React, Next.js, Vue и TypeScript на фронтенде, имею опыт работы с бэкендом на Next.js API routes и Python/FastAPI/PostgreSQL.",
+        "Ранее я работала на полной ставке в AlexFrontEnd, где участвовала в различных проектах — от простых лендингов до крупных веб-приложений. Я реализовала более 10 проектов для клиентов из разных отраслей, включая архитектуру и строительство, нефтегазовую отрасль, финансы и ИИ.",
+        "В свободное время получаю онлайн-степень бакалавра в области разработки программного обеспечения в International University of Applied Sciences."
+      ]
+    },
+    "experience": [
+      {
+        "id": 1,
+        "company": "AlexFrontEnd",
+        "position": "Frontend Developer",
+        "startDate": "2022-09",
+        "endDate": "2026-07",
+        "url": "https://www.alexfrontend.com/",
+        "description": [
+          "Разрабатывала и поддерживала веб-приложения на React, Next.js, Vue и TypeScript. Реализовала более 10 проектов для клиентов из разных отраслей, включая архитектуру и строительство, нефтегазовую отрасль, финансы, ИИ и другие."
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "name": "Приложение для управления скриптами",
+      "description": "Облачная платформа, созданная с использованием Vue.js и фреймворка Quasar, которая позволяет командам AEC (архитектура, инженерия и строительство) развертывать, документировать и контролировать свои автоматизационные скрипты Dynamo и Grasshopper в рамках всей организации.",
+      "technologies": [
+        "JavaScript",
+        "Vue.js",
+        "Quasar",
+        "Pinia",
+        "Vue Router",
+        "Vite",
+        "D3.js",
+        "Editor.js"
+      ],
+      "slug": "scripts-and-package-management-app",
+      "featuredImage": "/1-3.png",
+      "images": ["/1-1.png", "/1-2.png", "/1-3.png", "/1-4.png"]
+    },
+    {
+      "id": 2,
+      "name": "Маркетинговый сайт для B2B SaaS-платформы",
+      "description": "Маркетинговый сайт для B2B SaaS-платформы в области геонаук, петрофизики и производственной аналитики, которую используют геологи крупных нефтегазовых компаний, включая Devon, OXY, Coterra и Hilcorp.",
+      "technologies": [
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "Vite",
+        "Sanity CMS",
+        "Tailwind CSS",
+        "shadcn/ui"
+      ],
+      "slug": "nextjs-marketing-website",
+      "featuredImage": "/2-1.png",
+      "images": ["/2-1.png", "/2-2.png", "/2-3.png"]
+    },
+    {
+      "id": 3,
+      "name": "Дашборд для мерчантов",
+      "description": "Панель управления для мерчантов, предназначенная для управления транзакциями, биллингом и API-ключами, с отдельными интерфейсами для пользователей и администраторов. Разработана на React, TypeScript и Vite с использованием Chakra UI для компонентов, TanStack Query для получения данных, Zustand для управления состоянием и React Hook Form совместно с Zod для валидации форм.",
+      "technologies": [
+        "React.js",
+        "TypeScript",
+        "Vite",
+        "Chakra UI",
+        "TanStack Query",
+        "React Hook Form",
+        "Zod"
+      ],
+      "slug": "merchant-transactions-dashboard",
+      "featuredImage": "/3-1.png",
+      "images": ["/3-1.png", "/3-2.png", "/3-3.png", "/3-4.png"]
+    },
+    {
+      "id": 4,
+      "name": "Rocky Jam",
+      "description": "Приложение для музыкантов, позволяющее создавать, редактировать и воспроизводить музыкальные композиции. Разработано на Vue 3, TypeScript и Quasar, с использованием Pinia для управления состоянием и TanStack Query для получения данных. Приложение включает простую аутентификацию по логину и паролю с использованием JWT, галерею композиций, структурированный редактор композиций и движок воспроизведения с синхронизацией метронома. Легковесный бэкенд на FastAPI и PostgreSQL отвечает за хранение композиций. Разработала его самостоятельно, а позже его проверил бэкенд-разработчик.",
+      "technologies": [
+        "TypeScript",
+        "Vue.js",
+        "Quasar",
+        "Pinia",
+        "TanStack Query",
+        "Vue Router",
+        "Vite",
+        "FastAPI",
+        "PostgreSQL"
+      ],
+      "slug": "rocky-jam",
+      "featuredImage": "/4-1.png",
+      "images": ["/4-1.png", "/4-2.png", "/4-3.png", "/4-4.png", "/4-5.png"]
+    }
+  ]
+}

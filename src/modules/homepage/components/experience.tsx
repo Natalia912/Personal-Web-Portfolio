@@ -1,9 +1,10 @@
 import { type ExperienceType } from "@/src/shared/lib";
-import { experience, sections } from "@/src/shared/data";
+import { sections } from "@/src/shared/data";
 import { Section } from "./section";
 import { readableDate } from "@/src/shared/utils";
 import { Heading, Paragraph } from "@/src/shared/ui/typography";
 import { ArrowLink } from "@/src/shared/ui/components";
+import { useTranslations } from "next-intl";
 
 const ExperienceItem = ({ exp }: { exp: ExperienceType }) => (
   <a
@@ -34,17 +35,21 @@ const ExperienceItem = ({ exp }: { exp: ExperienceType }) => (
 );
 
 export const Experience = () => {
+  const t = useTranslations("homepage");
+  const btn = useTranslations("buttons");
+  const links = useTranslations("links");
+  const experience = t.raw("experience") as ExperienceType[];
   return (
-    <Section id={sections[1].id} name={sections[1].name}>
+    <Section id="experience" name={t("navigation.experience")}>
       <div className="flex flex-col gap-12">
         {experience.map((exp) => (
           <ExperienceItem exp={exp} key={exp.id} />
         ))}
         <ArrowLink
-          href="/CV_Natalia_Tretiakova.pdf"
+          href={links("cv")}
           target="_blank"
           rel="noopener noreferrer"
-          text="See full resume"
+          text={btn("seeResume")}
         />
       </div>
     </Section>
