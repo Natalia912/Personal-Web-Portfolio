@@ -1,8 +1,8 @@
 "use client";
 
-import { sections } from "@/src/shared/data";
 import { Airplane } from "@/src/shared/ui/icons";
 import { useNavigationObserver } from "../hooks/useNavigationObserver";
+import { useTranslations } from "next-intl";
 
 const PageLink = ({
   name,
@@ -31,21 +31,25 @@ const PageLink = ({
   </a>
 );
 
-const DesktopNavigation = ({ activeSection }: { activeSection: string }) => (
-  <nav aria-label="Page navigation links">
-    <ul className="flex flex-col gap-2">
-      {sections.map((section) => (
-        <li key={section.id}>
-          <PageLink
-            name={section.name}
-            url={`#${section.id}`}
-            isActive={activeSection === section.id}
-          />
-        </li>
-      ))}
-    </ul>
-  </nav>
-);
+const DesktopNavigation = ({ activeSection }: { activeSection: string }) => {
+  const t = useTranslations("homepage");
+  const sections: [string, string][] = Object.entries(t.raw("navigation"));
+  return (
+    <nav aria-label="Page navigation links">
+      <ul className="flex flex-col gap-2">
+        {sections.map(([key, name]) => (
+          <li key={key}>
+            <PageLink
+              name={name}
+              url={`#${key}`}
+              isActive={activeSection === key}
+            />
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
 
 export const Navigation = () => {
   const activeSection = useNavigationObserver();

@@ -8,11 +8,11 @@ import { styles } from "./lib/content-styles";
 export const Project = async ({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string; locale: string }>;
 }) => {
-  const { slug } = await params;
+  const { slug, locale } = await params;
 
-  const project = getProjectBySlug(slug);
+  const project = getProjectBySlug(slug, locale);
 
   if (!project) {
     notFound();
