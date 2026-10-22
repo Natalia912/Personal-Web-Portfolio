@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "title": "Natalia Tretiakova - Frontend Developer",
-    "description": "Portfolio of Natalia Tretiakova, a frontend developer specializing in React, Vue, Next.js and TypeScript. Explore my projects, experience, and contact information."
+    "title": "Natalia Tretiakova - Fullstack Developer",
+    "description": "Portfolio of Natalia Tretiakova, a fullstack developer specializing in React, Vue, Next.js, and TypeScript. Explore my projects, experience, and contact information."
   },
   "links": {
-    "cv": "/CV_Natalia_Tretiakova.pdf"
+    "cv": "/CV_Natalia_Tretiakova_Fullstack_Developer.pdf"
   },
   "buttons": {
     "selectLanguage": "Select Language",
@@ -19,10 +19,10 @@
     },
     "about": {
       "name": "Natalia Tretiakova",
-      "title": "Frontend Developer",
+      "title": "Fullstack Developer",
       "shortDescription": "Developing user-friendly and pixel-perfect web applications since 2022.",
       "longDescription": [
-        "I am a frontend developer with {yoe} years of experience creating user-friendly and pixel-perfect web applications, and hands-on experience building simple fullstack systems. I specialize in React, Next.js, Vue, and TypeScript on the frontend, with backend experience in Next.js API routes and Python/FastAPI/PostgreSQL.",
+        "I am a fullstack developer with {yoe} years of experience creating user-friendly and pixel-perfect web applications. I specialize in React, Next.js, Vue, and TypeScript on the frontend, and in Next.js API routes and Python/FastAPI/PostgreSQL on the backend.",
         "Previously, I worked full-time at AlexFrontEnd, where I was involved in various projects, ranging from simple landing pages to large-scale web applications. I built 10+ projects for clients across different industries, including architecture & construction, oil & gas, finance, and AI.",
         "In my free time, I am pursuing an online Bachelor's degree in Software Development at International University of Applied Sciences."
       ]
@@ -31,12 +31,12 @@
       {
         "id": 1,
         "company": "AlexFrontEnd",
-        "position": "Frontend Developer",
+        "position": "Fullstack Developer",
         "startDate": "2022-09",
         "endDate": "2026-07",
         "url": "https://www.alexfrontend.com/",
         "description": [
-          "Developed and maintained web applications using React, Next.js, Vue, and TypeScript. Built 10+ projects for clients in different industries, such as architecture & construction, oil & gas, finance, AI, and more."
+          "Developed and maintained web applications using React, Next.js, Vue,TypeScript, Python, FastAPI, and PostgreSQL. Built 10+ projects for clients in different industries, such as architecture & construction, oil & gas, finance, AI, and more."
         ]
       }
     ]
@@ -106,6 +106,7 @@
         "TanStack Query",
         "Vue Router",
         "Vite",
+        "Python",
         "FastAPI",
         "PostgreSQL"
       ],

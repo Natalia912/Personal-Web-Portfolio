@@ -20,9 +20,9 @@ Rocky Jam is an app for musicians to create, edit, and play back musical composi
 - Implemented the popup-based chord creation/editing flow
 - Extended an existing playback engine (originally built by another developer on the team), adding features on top of it over time
 - Used Pinia for composition/editor state and TanStack Query for server-state synchronization with the backend
-- Built a FastAPI + PostgreSQL backend for composition CRUD (create, edit, delete), later reviewed and improved in collaboration with a backend developer
+- Built a FastAPI + PostgreSQL backend for composition CRUD (create, edit, delete)
 - Implemented JWT-based authentication flow on both frontend and backend
 
 ## My role
 
-Primary developer on the frontend. I built the composition gallery, editor, and authentication flow, and extended the playback engine with additional features over time. Also built the initial backend in FastAPI and PostgreSQL, later reviewed and improved by a backend developer.
+I was responsible for the MVP development end-to-end.
