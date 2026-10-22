@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "title": "Наталья Третьякова - Frontend Developer",
-    "description": "Портфолио Натальи Третьяковой, frontend-разработчицы, специализирующейся на React, Vue, Next.js и TypeScript. Ознакомьтесь с моими проектами, опытом работы и контактной информацией."
+    "title": "Наталья Третьякова - Fullstack Developer",
+    "description": "Портфолио Натальи Третьяковой, fullstack-разработчицы, специализирующейся на React, Vue, Next.js и TypeScript. Ознакомьтесь с моими проектами, опытом работы и контактной информацией."
   },
   "links": {
-    "cv": "/CV_Наталья_Третьякова.pdf"
+    "cv": "/Резюме_Наталья_Третьякова_Разработчик.pdf"
   },
   "buttons": {
     "selectLanguage": "Выбрать язык",
@@ -19,10 +19,10 @@
     },
     "about": {
       "name": "Наталья Третьякова",
-      "title": "Frontend Developer",
+      "title": "Fullstack Developer",
       "shortDescription": "Разрабатываю удобные и качественные веб-приложения с 2022",
       "longDescription": [
-        "Я frontend-разработчик с {yoe}-летним опытом создания удобных и pixel-perfect веб-приложений, а также опытом разработки простых fullstack-систем. Специализируюсь на React, Next.js, Vue и TypeScript на фронтенде, имею опыт работы с бэкендом на Next.js API routes и Python/FastAPI/PostgreSQL.",
+        "Я fullstack-разработчик с {yoe}-летним опытом создания удобных и pixel-perfect веб-приложений. Специализируюсь на React, Next.js, Vue и TypeScript на фронтенде, а также на бэкенде с использованием Next.js API routes и Python/FastAPI/PostgreSQL.",
         "Ранее я работала на полной ставке в AlexFrontEnd, где участвовала в различных проектах — от простых лендингов до крупных веб-приложений. Я реализовала более 10 проектов для клиентов из разных отраслей, включая архитектуру и строительство, нефтегазовую отрасль, финансы и ИИ.",
         "В свободное время получаю онлайн-степень бакалавра в области разработки программного обеспечения в International University of Applied Sciences."
       ]
@@ -31,12 +31,12 @@
       {
         "id": 1,
         "company": "AlexFrontEnd",
-        "position": "Frontend Developer",
+        "position": "Fullstack Developer",
         "startDate": "2022-09",
         "endDate": "2026-07",
         "url": "https://www.alexfrontend.com/",
         "description": [
-          "Разрабатывала и поддерживала веб-приложения на React, Next.js, Vue и TypeScript. Реализовала более 10 проектов для клиентов из разных отраслей, включая архитектуру и строительство, нефтегазовую отрасль, финансы, ИИ и другие."
+          "Разрабатывала и поддерживала веб-приложения на React, Next.js, Vue, TypeScript, Python, FastAPI и PostgreSQL. Реализовала более 10 проектов для клиентов из разных отраслей, включая архитектуру и строительство, нефтегазовую отрасль, финансы, ИИ и другие."
         ]
       }
     ]
@@ -106,6 +106,7 @@
         "TanStack Query",
         "Vue Router",
         "Vite",
+        "Python",
         "FastAPI",
         "PostgreSQL"
       ],
